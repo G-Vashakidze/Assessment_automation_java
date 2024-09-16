@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CartPageTestSuite">
+    <test name="CartPageTestTest">
+        <classes>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
