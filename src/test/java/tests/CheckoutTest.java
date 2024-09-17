@@ -23,10 +23,12 @@ public class CheckoutTest {
     public void setup(){
         driver = WebDriverFactory.getDriver();
         driver.get(TestData.BASE_URL);;
+        driver.manage().window().maximize();
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
         loginPage.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD);
+
 
     }
 

@@ -18,6 +18,7 @@ public class AddToCartTest {
     @BeforeMethod
     public void setup() {
         driver = WebDriverFactory.getDriver();
+        driver.manage().window().maximize();
         driver.get(TestData.BASE_URL);
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);

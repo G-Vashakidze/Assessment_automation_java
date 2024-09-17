@@ -15,8 +15,9 @@ public class LoginTest {
 
     @BeforeMethod
     public void setup() {
-        driver = WebDriverFactory.getDriver(); // Initialize using factory
+        driver = WebDriverFactory.getDriver();
         driver.get(TestData.BASE_URL);
+        driver.manage().window().maximize();
         loginPage = new LoginPage(driver);
     }
 
